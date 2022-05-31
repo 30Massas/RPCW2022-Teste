@@ -1,0 +1,51 @@
+RPCW2022 - Teste
+
+Nome: Luís Pedro Oliveira de Castro Vieira
+Número: PG47430
+Data: 31-05-2022
+
+<Exercício 1>
+
+-> Persistência de Dados e Setup da Base de Dados
+
+De forma a garantir a persistência dos dados utilizados no presente teste,
+foi criada uma base de dados em MongoDB e foram adicionados os registos
+obtidos através de um ficheiro JSON.
+Este ficheiro inicial foi dividido em dois, para poder explorar duas coleções
+distintas: cidades e ligações.
+Assim através dos comandos ".\mongoimport -d MAPA2022 -c cidades cidades.json"
+e ".\mongoimport -d MAPA2022 -c ligacoes ligacoes.json" criei e povoei
+a base de dados que me serviria de auxílio no teste.
+
+
+<Exercício 2>
+
+-> "Aquecimento"
+
+Alínea a) São 18 processos, sendo eles '750.10.001', '750.10.002',
+'750.10.300', '750.10.600', '750.10.601', '750.10.602', '750.20.001', '750.20.002', '750.20.003', '750.20.300', '750.20.301', '750.20.600', '750.20.601', '750.30.001', '750.30.300',
+'750.30.600', '750.30.601', '750.30.602'.
+
+Para obter esta resposta usei de forma manual o Postman para descobrir
+os filhos da classe 750 e posteriormente dos seus filhos, contabilizando
+e anotando os últimos (nível 3).
+
+Para as restantes questões usei um script em Python que faz os requests
+à API e contabiliza o necessário.
+
+Alínea b) 647 entidades
+
+Alínea c) 7 processos.
+
+Alínea d) 24 processos.
+
+<Execução dos Programas Desenvolvidos>
+
+-> Para ambos os exercícios
+
+  - Após descarregar a pasta que contém o exercício deve executar
+o comando "npm i" de modo a instalar todas as dependências já configuradas
+  - Posteriormente é apenas necessário executar o comando "npm run
+start"
+  - Para aceder ao exercício 1 devemos procurar aceder a "localhost:3131",
+enquanto que para o exercício 2 devemos procurar aceder a "localhost:4031". 

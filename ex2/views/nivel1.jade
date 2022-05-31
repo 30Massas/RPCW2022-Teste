@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  .w3-container.w3-margin
+    table.w3-table-all
+      tr
+        th.w3-center.w3-green Código
+        th.w3-center.w3-green Título
+      each d in data
+        tr
+          td.w3-center
+            a(href="/classes/"+d.codigo)= d.codigo
+          td.w3-center= d.titulo
+  .w3-container.w3-margin
+    .w3-footer
+        a.w3-left(href="/") Página Inicial
+        a.w3-right(href=prev) Página Anterior
